@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
-const authToken = "%AUTHTOKEN%";
+const authToken = require('./auth.js');
 
 bot.on("message", async message => {
   if (!message.guild) return;
